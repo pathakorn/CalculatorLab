@@ -109,7 +109,7 @@ namespace CPE200Lab1
                 return;
             }
             if (isAfterOperater)
-            {
+            {  
                 return;
             }
             operate = ((Button)sender).Text;
