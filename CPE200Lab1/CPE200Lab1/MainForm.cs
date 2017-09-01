@@ -21,7 +21,7 @@ namespace CPE200Lab1
         private string operate;
         private bool secondOperandClicked = false;
         private CalculatorEngine cal = new CalculatorEngine();
-
+       
         private void resetAll()
         {
             lblDisplay.Text = "0";
@@ -37,8 +37,7 @@ namespace CPE200Lab1
         public MainForm()
         {
             InitializeComponent();
-            memory = 0;
-            engine = new CalculatorEngine();
+            
             resetAll();
         }
 
@@ -83,15 +82,15 @@ namespace CPE200Lab1
             }
             operate = ((Button)sender).Text;
             firstOperand = lblDisplay.Text;
-            string result = engine.unaryCalculate(operate, firstOperand);
-            if (result is "E" || result.Length > 8)
+          //  string result = engine.unaryCalculate(operate, firstOperand);
+         /*   if (result is "E" || result.Length > 8)
             {
                 lblDisplay.Text = "Error";
             }
             else
             {
                 lblDisplay.Text = result;
-            }
+            }*/
 
         }
 
@@ -127,15 +126,15 @@ namespace CPE200Lab1
             if(firstOperand != null)
             {
                 string secondOperand = lblDisplay.Text;
-                string result = engine.calculate(operate, firstOperand, secondOperand);
-                if (result is "E" || result.Length > 8)
+             //   string result = engine.calculate(operate, firstOperand, secondOperand);
+             /*   if (result is "E" || result.Length > 8)
                 {
                     lblDisplay.Text = "Error";
                 }
                 else
                 {
                     lblDisplay.Text = result;
-                }
+                }*/
             }
             operate = ((Button)sender).Text;
             switch (operate)
@@ -162,15 +161,15 @@ namespace CPE200Lab1
                 return;
             }
             string secondOperand = lblDisplay.Text;
-            string result = engine.calculate(operate, firstOperand, secondOperand);
-            if (result is "E" || result.Length > 8)
+          //  string result = engine.calculate(operate, firstOperand, secondOperand);
+          /*  if (result is "E" || result.Length > 8)
             {
                 lblDisplay.Text = "Error";
             }
             else
             {
                 lblDisplay.Text = result;
-            }
+            }*/
             isAfterEqual = true;
             secondOperandClicked = false;
         }
@@ -264,7 +263,7 @@ namespace CPE200Lab1
             lblDisplay.Text = oneOver_x.ToString();
         }
 
-        private void btnM_Click(object sender, EventArgs e)
+        /*private void btnM_Click(object sender, EventArgs e)
         {
             string mOper = ((Button)sender).Text;
             switch (mOper)
@@ -288,7 +287,7 @@ namespace CPE200Lab1
                     mAll = (Convert.ToDouble(mAll) - Convert.ToDouble(lblDisplay.Text)).ToString();
                     label1.Text = mAll; break;
             }
-        }
+        }*/
 
         private void root_Click(object sender, EventArgs e)
         {
