@@ -362,6 +362,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(474, 508);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -393,6 +394,7 @@
             this.Controls.Add(this.btn7);
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainForm_Load_1);
             this.ResumeLayout(false);
 
         }
