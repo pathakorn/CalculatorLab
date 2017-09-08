@@ -12,7 +12,7 @@ namespace CPE200Lab1
 {
     public partial class MainForm : Form
     {
-        private String mAll;
+      //  private String mAll;
         private bool hasDot;
         private bool isAllowBack;
         private bool isAfterOperater;
