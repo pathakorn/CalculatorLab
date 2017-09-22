@@ -26,7 +26,7 @@ namespace CPE200Lab1
             {
                 if (isNumber(token))
                 {
-                  //  rpnStack.Push(token);
+                 
                                         if (token.First() == '+')
                                             {
                                            }
