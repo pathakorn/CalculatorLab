@@ -36,6 +36,6 @@ namespace CPE200Lab1
                 }
             }
             return parts[0];
-        }
+        }   
     }
 }
